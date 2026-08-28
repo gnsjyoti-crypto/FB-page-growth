@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI + Facebook Page Growth — Free Live Webinar with Jyoti Mishra. 2 September 2026, 11 AM–1 PM.">
+  <title>AI + Facebook Page Growth | Live Webinar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#071d38;
+      --navy2:#0b2b50;
+      --blue:#1260c9;
+      --blue2:#2782ff;
+      --gold:#ffbd22;
+      --white:#fff;
+      --muted:#5d6b7d;
+      --light:#f5f8fc;
+      --border:#e4eaf2;
+      --shadow:0 20px 55px rgba(7,29,56,.14);
+      --radius:24px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,Arial,sans-serif;color:var(--navy);background:#fff;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .container{width:min(1120px,92%);margin:auto}
+    .topbar{background:var(--navy);color:#fff;text-align:center;padding:10px 16px;font-size:14px;font-weight:700}
+    .topbar span{color:var(--gold)}
+    nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+    .nav-inner{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-weight:900;letter-spacing:-.5px;font-size:20px}
+    .brand b{color:var(--blue)}
+    .nav-links{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:700;color:#405065}
+    .nav-links a:hover{color:var(--blue)}
+    .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border:0;cursor:pointer;font-weight:800;border-radius:12px;padding:13px 20px;transition:.2s}
+    .nav-cta{background:var(--gold);color:#101820}
+    .nav-cta:hover,.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.12)}
+    .hero{background:linear-gradient(135deg,#f7fbff 0%,#fff 58%,#eef5ff 100%);padding:68px 0 82px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:58px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;background:var(--navy);color:#fff;border-radius:999px;padding:9px 15px;font-size:13px;font-weight:800;margin-bottom:22px}
+    .eyebrow i{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px rgba(255,189,34,.15)}
+    h1{font-size:clamp(44px,6vw,72px);line-height:.98;letter-spacing:-3px;font-weight:900;margin-bottom:20px}
+    h1 span{display:block;color:var(--blue)}
+    .lead{font-size:19px;color:#536276;max-width:650px;margin-bottom:28px}
+    .event-pills{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 30px}
+    .pill{background:#fff;border:1px solid var(--border);padding:10px 13px;border-radius:12px;font-size:14px;font-weight:700;box-shadow:0 5px 16px rgba(7,29,56,.05)}
+    .pill strong{color:var(--blue)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+    .btn-primary{background:var(--gold);color:#111;padding:16px 24px;font-size:16px}
+    .btn-secondary{background:var(--navy);color:#fff;padding:16px 24px;font-size:16px}
+    .hero-note{font-size:12px;color:#718095;margin-top:12px}
+    .hero-visual{position:relative}
+    .hero-card{background:#fff;border-radius:28px;padding:12px;box-shadow:var(--shadow);transform:rotate(1deg)}
+    .hero-card img{border-radius:20px;width:100%;height:auto}
+    .floating{position:absolute;background:#fff;border:1px solid var(--border);box-shadow:0 12px 35px rgba(7,29,56,.15);border-radius:16px;padding:13px 16px;font-size:13px;font-weight:800}
+    .floating.one{left:-30px;bottom:55px}.floating.two{right:-25px;top:45px}
+    section{padding:88px 0}
+    .section-head{text-align:center;max-width:750px;margin:0 auto 48px}
+    .kicker{color:var(--blue);font-weight:900;text-transform:uppercase;letter-spacing:1.5px;font-size:13px;margin-bottom:10px}
+    h2{font-size:clamp(32px,4vw,48px);line-height:1.08;letter-spacing:-1.5px;margin-bottom:14px}
+    .section-head p{color:var(--muted);font-size:17px}
+    .features{background:var(--light)}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .feature{background:#fff;padding:30px;border-radius:20px;border:1px solid var(--border);box-shadow:0 8px 25px rgba(7,29,56,.05)}
+    .icon{width:52px;height:52px;display:grid;place-items:center;border-radius:15px;background:#eaf3ff;font-size:25px;margin-bottom:20px}
+    .feature h3{font-size:20px;margin-bottom:8px}.feature p{color:var(--muted);font-size:15px}
+    .about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}
+    .trainer-photo{border-radius:26px;overflow:hidden;box-shadow:var(--shadow);background:#eee}
+    .trainer-photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+    .checklist{display:grid;gap:15px;margin:25px 0}
+    .check{display:flex;gap:12px;align-items:flex-start}.check b{display:grid;place-items:center;min-width:27px;height:27px;border-radius:50%;background:#e8f2ff;color:var(--blue);font-size:14px}
+    .check span{color:#536276}
+    .agenda{background:var(--navy);color:#fff}
+    .agenda .section-head p{color:#b8c7d9}
+    .agenda-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .agenda-card{padding:27px;border:1px solid rgba(255,255,255,.12);border-radius:20px;background:rgba(255,255,255,.05)}
+    .agenda-card .num{color:var(--gold);font-weight:900;font-size:13px;margin-bottom:9px}.agenda-card h3{margin-bottom:8px}.agenda-card p{color:#b8c7d9;font-size:14px}
+    .register{background:linear-gradient(135deg,#eef6ff,#fff)}
+    .register-box{background:#fff;border:1px solid var(--border);border-radius:28px;box-shadow:var(--shadow);padding:52px;text-align:center;max-width:850px;margin:auto}
+    .price{font-size:48px;font-weight:900;color:var(--blue);line-height:1;margin:12px 0 22px}.price small{font-size:17px;color:var(--muted);font-weight:700}
+    .register-meta{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:22px 0 28px}
+    .payment-note{font-size:13px;color:#718095;margin-top:13px}
+    footer{background:#06182e;color:#b9c6d5;padding:28px 0;font-size:13px}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}
+    footer strong{color:#fff}
+    @media(max-width:900px){
+      .hero-grid,.about-grid{grid-template-columns:1fr}
+      .hero{padding-top:45px}.hero-visual{max-width:650px;margin:auto}
+      .feature-grid,.agenda-grid{grid-template-columns:1fr}
+      .nav-links{display:none}
+      .floating.one{left:5px}.floating.two{right:5px}
+    }
+    @media(max-width:600px){
+      h1{letter-spacing:-2px}.hero{padding-bottom:55px}section{padding:65px 0}
+      .register-box{padding:30px 20px}.footer-inner{flex-direction:column;text-align:center}
+      .topbar{font-size:12px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Replace the Razorpay URL below in the REGISTER_URL constant. -->
+  <div class="topbar">Limited seats • <span>₹99 registration</span> • Live on Facebook / Zoom</div>
+
+  <nav>
+    <div class="container nav-inner">
+      <div class="brand">AI <b>+</b> FACEBOOK</div>
+      <div class="nav-links">
+        <a href="#learn">What You'll Learn</a>
+        <a href="#trainer">Trainer</a>
+        <a href="#agenda">Agenda</a>
+      </div>
+      <a class="nav-cta" id="navRegister" href="#register">Register ₹99</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><i></i> FREE LIVE WEBINAR • 2 SEPTEMBER 2026</div>
+          <h1>AI + Facebook <span>Page Growth</span></h1>
+          <p class="lead">Learn how to use AI to create engaging content, grow your Facebook Page consistently, and turn views into paying clients.</p>
+
+          <div class="event-pills">
+            <div class="pill">📅 <strong>2 Sep 2026</strong></div>
+            <div class="pill">⏰ <strong>11:00 AM–1:00 PM</strong></div>
+            <div class="pill">🎤 <strong>Jyoti Mishra</strong></div>
+            <div class="pill">💳 <strong>₹99</strong></div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary register-link" href="#register">REGISTER NOW →</a>
+            <a class="btn btn-secondary" href="#learn">SEE WHAT YOU'LL LEARN</a>
+          </div>
+          <div class="hero-note">Secure payment via Razorpay • Join live from anywhere</div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card"><img src="webinar-poster.png" alt="AI + Facebook Page Growth webinar poster"></div>
+          <div class="floating one">🚀 More reach. More engagement.</div>
+          <div class="floating two">✨ AI-powered strategies</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="learn" class="features">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker">What you'll learn</div>
+          <h2>Turn attention into growth.</h2>
+          <p>A practical session designed for creators, coaches and business owners who want a stronger Facebook presence.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature">
+            <div class="icon">🤖</div>
+            <h3>Create content with AI</h3>
+            <p>Use AI to develop useful, engaging content ideas and formats that attract the right audience.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">📈</div>
+            <h3>Grow your Page</h3>
+            <p>Build a consistent organic content approach to improve reach, engagement and audience trust.</p>
+          </div>
+          <div class="feature">
+            <div class="icon">💰</div>
+            <h3>Convert views into clients</h3>
+            <p>Learn how to connect content, audience attention and simple calls-to-action to business outcomes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trainer">
+      <div class="container about-grid">
+        <div class="trainer-photo"><img src="trainer.png" alt="Jyoti Mishra, webinar trainer"></div>
+        <div>
+          <div class="kicker">Meet your trainer</div>
+          <h2>Learn with Jyoti Mishra.</h2>
+          <p class="lead">A focused live session combining AI-assisted content creation with practical Facebook Page growth strategies.</p>
+          <div class="checklist">
+            <div class="check"><b>✓</b><span>Actionable content ideas you can use immediately</span></div>
+            <div class="check"><b>✓</b><span>Simple ways to improve consistency and engagement</span></div>
+            <div class="check"><b>✓</b><span>Strategies to move from views and followers toward clients</span></div>
+          </div>
+          <a class="btn btn-primary register-link" href="#register">SAVE MY SEAT — ₹99</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="agenda" class="agenda">
+      <div class="container">
+        <div class="section-head">
+          <div class="kicker" style="color:var(--gold)">Live session</div>
+          <h2>What we'll cover</h2>
+          <p>Two focused hours packed with practical, easy-to-apply strategies.</p>
+        </div>
+        <div class="agenda-grid">
+          <div class="agenda-card"><div class="num">01 • AI CONTENT</div><h3>Create faster with AI</h3><p>Content ideas, hooks, formats and workflows that help you publish with less effort.</p></div>
+          <div class="agenda-card"><div class="num">02 • FACEBOOK GROWTH</div><h3>Build organic reach</h3><p>Understand what to post, how to stay consistent and how to encourage meaningful engagement.</p></div>
+          <div class="agenda-card"><div class="num">03 • CONVERSION</div><h3>Turn views into clients</h3><p>Use clear messaging and calls-to-action to guide interested viewers toward your offer.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="register" class="register">
+      <div class="container">
+        <div class="register-box">
+          <div class="kicker">Reserve your seat</div>
+          <h2>Ready to grow your Facebook Page?</h2>
+          <p>Join Jyoti Mishra live on 2 September 2026.</p>
+          <div class="price">₹99 <small>one-time registration</small></div>
+          <div class="register-meta">
+            <div class="pill">📅 2 September 2026</div>
+            <div class="pill">⏰ 11:00 AM–1:00 PM</div>
+            <div class="pill">📍 Facebook / Zoom</div>
+          </div>
+          <a class="btn btn-primary register-link" style="font-size:18px;padding:17px 32px" href="#">PAY ₹99 & REGISTER NOW →</a>
+          <div class="payment-note">You will be redirected to Razorpay for secure payment.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>AI + Facebook Page Growth</strong> • Live Webinar</div>
+      <div>© 2026 Jyoti Mishra</div>
+    </div>
+  </footer>
+
+  <script>
+    // IMPORTANT: Replace this with your actual Razorpay payment link.
+    const REGISTER_URL = "https://razorpay.me/@jyotimishra7924";
+
+    document.querySelectorAll(".register-link").forEach(link => {
+      link.addEventListener("click", function(e) {
+        if (REGISTER_URL.includes("PASTE_YOUR_RAZORPAY")) {
+          e.preventDefault();
+          alert("Please add your Razorpay payment link in index.html first. Search for REGISTER_URL.");
+        } else {
+          this.href = REGISTER_URL;
+          this.target = "_blank";
+          this.rel = "noopener";
+        }
+      });
+    });
+
+    const navRegister = document.getElementById("navRegister");
+    navRegister.addEventListener("click", function(e) {
+      if (!REGISTER_URL.includes("PASTE_YOUR_RAZORPAY")) {
+        e.preventDefault();
+        window.open(REGISTER_URL, "_blank", "noopener");
+      }
+    });
+  </script>
+</body>
+</html>
