@@ -87,10 +87,20 @@
     footer{background:#06182e;color:#b9c6d5;padding:28px 0;font-size:13px}
     .footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}
     footer strong{color:#fff}
+
+    .registration-form{margin:30px auto 0;max-width:720px;text-align:left}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .field label{display:block;font-size:13px;font-weight:800;margin-bottom:7px;color:var(--navy)}
+    .field input{width:100%;border:1px solid #d7e0eb;border-radius:12px;padding:14px 15px;font:inherit;font-size:14px;outline:none;background:#fff;transition:.2s}
+    .field input:focus{border-color:var(--blue);box-shadow:0 0 0 4px rgba(18,96,201,.10)}
+    .consent{display:flex;gap:10px;align-items:flex-start;margin:18px 0 22px;font-size:12px;color:#667589;cursor:pointer}
+    .consent input{margin-top:3px;accent-color:var(--blue)}
+
     @media(max-width:900px){
       .hero-grid,.about-grid{grid-template-columns:1fr}
       .hero{padding-top:45px}.hero-visual{max-width:650px;margin:auto}
       .feature-grid,.agenda-grid{grid-template-columns:1fr}
+      .form-grid{grid-template-columns:1fr}
       .nav-links{display:none}
       .floating.one{left:5px}.floating.two{right:5px}
     }
@@ -211,16 +221,45 @@
       <div class="container">
         <div class="register-box">
           <div class="kicker">Reserve your seat</div>
-          <h2>Ready to grow your Facebook Page?</h2>
-          <p>Join Jyoti Mishra live on 2 September 2026.</p>
-          <div class="price">₹99 <small>one-time registration</small></div>
-          <div class="register-meta">
-            <div class="pill">📅 2 September 2026</div>
-            <div class="pill">⏰ 11:00 AM–1:00 PM</div>
-            <div class="pill">📍 Facebook / Zoom</div>
-          </div>
-          <a class="btn btn-primary register-link" style="font-size:18px;padding:17px 32px" href="#">PAY ₹99 & REGISTER NOW →</a>
-          <div class="payment-note">You will be redirected to Razorpay for secure payment.</div>
+          <h2>Register for the live webinar</h2>
+          <p>Enter your details below. After submitting the form, you'll be taken to Razorpay to complete the ₹99 payment.</p>
+
+          <form class="registration-form" action="https://formsubmit.co/gns.jyoti@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New AI + Facebook Page Growth Webinar Registration">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://razorpay.me/@jyotimishra7924">
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Full Name *</label>
+                <input id="name" name="Full Name" type="text" placeholder="Enter your full name" required>
+              </div>
+              <div class="field">
+                <label for="email">Email Address *</label>
+                <input id="email" name="Email" type="email" placeholder="you@example.com" required>
+              </div>
+              <div class="field">
+                <label for="phone">WhatsApp / Mobile Number *</label>
+                <input id="phone" name="WhatsApp / Mobile" type="tel" inputmode="tel" placeholder="+91 98765 43210" required>
+              </div>
+              <div class="field">
+                <label for="page">Facebook Page / Business Name</label>
+                <input id="page" name="Facebook Page / Business" type="text" placeholder="Optional">
+              </div>
+            </div>
+
+            <label class="consent">
+              <input type="checkbox" required>
+              <span>I confirm that the information provided is correct and I want to register for the webinar.</span>
+            </label>
+
+            <button class="btn btn-primary" style="width:100%;font-size:18px;padding:17px 28px" type="submit">
+              SUBMIT & PAY ₹99 →
+            </button>
+
+            <div class="payment-note">🔒 Your details are submitted securely. You will be redirected to Razorpay after submitting the form.</div>
+          </form>
         </div>
       </div>
     </section>
@@ -234,29 +273,8 @@
   </footer>
 
   <script>
-    // IMPORTANT: Replace this with your actual Razorpay payment link.
-    const REGISTER_URL = "https://razorpay.me/@jyotimishra7924";
-
-    document.querySelectorAll(".register-link").forEach(link => {
-      link.addEventListener("click", function(e) {
-        if (REGISTER_URL.includes("PASTE_YOUR_RAZORPAY")) {
-          e.preventDefault();
-          alert("Please add your Razorpay payment link in index.html first. Search for REGISTER_URL.");
-        } else {
-          this.href = REGISTER_URL;
-          this.target = "_blank";
-          this.rel = "noopener";
-        }
-      });
-    });
-
-    const navRegister = document.getElementById("navRegister");
-    navRegister.addEventListener("click", function(e) {
-      if (!REGISTER_URL.includes("PASTE_YOUR_RAZORPAY")) {
-        e.preventDefault();
-        window.open(REGISTER_URL, "_blank", "noopener");
-      }
-    });
+    // Payment destination is handled by the form's _next field above.
+    // Replace YOUR_EMAIL_HERE in the form action with the email address that should receive registrations.
   </script>
 </body>
 </html>
