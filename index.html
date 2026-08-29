@@ -76,8 +76,9 @@
     .check span{color:#536276}
     .agenda{background:var(--navy);color:#fff}
     .agenda .section-head p{color:#b8c7d9}
-    .agenda-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .agenda-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
     .agenda-card{padding:27px;border:1px solid rgba(255,255,255,.12);border-radius:20px;background:rgba(255,255,255,.05)}
+    .video-card{background:linear-gradient(145deg,rgba(22,94,190,.30),rgba(255,255,255,.06));border-color:rgba(56,139,253,.55)}
     .agenda-card .num{color:var(--gold);font-weight:900;font-size:13px;margin-bottom:9px}.agenda-card h3{margin-bottom:8px}.agenda-card p{color:#b8c7d9;font-size:14px}
     .register{background:linear-gradient(135deg,#eef6ff,#fff)}
     .register-box{background:#fff;border:1px solid var(--border);border-radius:28px;box-shadow:var(--shadow);padding:52px;text-align:center;max-width:850px;margin:auto}
@@ -87,6 +88,14 @@
     footer{background:#06182e;color:#b9c6d5;padding:28px 0;font-size:13px}
     .footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}
     footer strong{color:#fff}
+
+    .trainer-title{font-size:17px;font-weight:800;color:var(--blue);margin:-4px 0 16px}
+    .bio-text{color:#536276;font-size:15px;margin:0 0 13px}
+    .trainer-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:24px 0}
+    .trainer-stats div{background:#f5f8fc;border:1px solid var(--border);border-radius:14px;padding:14px 10px;text-align:center}
+    .trainer-stats strong{display:block;font-size:19px;color:var(--blue);line-height:1.2}
+    .trainer-stats span{display:block;color:#657489;font-size:11px;font-weight:700;margin-top:5px}
+    .trainer-quote{border-left:4px solid var(--gold);background:#fff9e8;padding:13px 16px;border-radius:0 12px 12px 0;color:#3f4d60;font-size:14px;font-weight:700;font-style:italic;margin:20px 0 24px}
 
     .registration-form{margin:30px auto 0;max-width:720px;text-align:left}
     .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -101,6 +110,7 @@
       .hero{padding-top:45px}.hero-visual{max-width:650px;margin:auto}
       .feature-grid,.agenda-grid{grid-template-columns:1fr}
       .form-grid{grid-template-columns:1fr}
+      .trainer-stats{grid-template-columns:1fr 1fr}
       .nav-links{display:none}
       .floating.one{left:5px}.floating.two{right:5px}
     }
@@ -189,14 +199,19 @@
       <div class="container about-grid">
         <div class="trainer-photo"><img src="trainer.png" alt="Jyoti Mishra, webinar trainer"></div>
         <div>
-          <div class="kicker">Meet your trainer</div>
-          <h2>Learn with Jyoti Mishra.</h2>
-          <p class="lead">A focused live session combining AI-assisted content creation with practical Facebook Page growth strategies.</p>
-          <div class="checklist">
-            <div class="check"><b>✓</b><span>Actionable content ideas you can use immediately</span></div>
-            <div class="check"><b>✓</b><span>Simple ways to improve consistency and engagement</span></div>
-            <div class="check"><b>✓</b><span>Strategies to move from views and followers toward clients</span></div>
+          <div class="kicker">About the Trainer</div>
+          <h2>Meet Jyoti Mishra.</h2>
+          <p class="trainer-title">Digital Marketing Expert | Facebook Growth Strategist | AI Content Mentor</p>
+          <p class="lead">With <strong>15+ years of experience in Digital Marketing</strong>, Jyoti Mishra has helped creators, entrepreneurs and businesses leverage Facebook, content marketing and AI to build audiences and grow their businesses.</p>
+          <p class="bio-text">She holds a <strong>B.Tech in Information Technology</strong> and runs a successful Facebook page with <strong>millions of followers</strong>, giving her hands-on experience in building and scaling large social media communities.</p>
+          <p class="bio-text">Over the years, Jyoti has <strong>trained and mentored several clients</strong>, helping them turn their social media presence into real business opportunities, with some clients building businesses generating <strong>crores in revenue</strong>.</p>
+          <div class="trainer-stats">
+            <div><strong>15+</strong><span>Years Experience</span></div>
+            <div><strong>Millions+</strong><span>Facebook Followers</span></div>
+            <div><strong>Several</strong><span>Clients Trained</span></div>
+            <div><strong>₹ Crores</strong><span>Client Success</span></div>
           </div>
+          <div class="trainer-quote">“I don't just teach Facebook growth — I teach strategies I've used and tested in the real world.”</div>
           <a class="btn btn-primary register-link" href="#register">SAVE MY SEAT — ₹99</a>
         </div>
       </div>
@@ -213,6 +228,7 @@
           <div class="agenda-card"><div class="num">01 • AI CONTENT</div><h3>Create faster with AI</h3><p>Content ideas, hooks, formats and workflows that help you publish with less effort.</p></div>
           <div class="agenda-card"><div class="num">02 • FACEBOOK GROWTH</div><h3>Build organic reach</h3><p>Understand what to post, how to stay consistent and how to encourage meaningful engagement.</p></div>
           <div class="agenda-card"><div class="num">03 • CONVERSION</div><h3>Turn views into clients</h3><p>Use clear messaging and calls-to-action to guide interested viewers toward your offer.</p></div>
+          <div class="agenda-card video-card"><div class="num">04 • VIDEO OPTIMIZATION</div><h3>How to choose the proper title &amp; description of video</h3><p>Learn how to write attention-grabbing titles and SEO-friendly descriptions that help your videos get more views and reach.</p></div>
         </div>
       </div>
     </section>
